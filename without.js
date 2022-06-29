@@ -37,7 +37,7 @@ const without = function(source, itemsToRemove) {
 };
 
 without([1, 2, 3], [1]) // => [2, 3]
-without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
+without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"] == //Not working :(
 
 
 const words = ["hello", "world", "lighthouse"];
