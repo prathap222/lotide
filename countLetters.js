@@ -5,8 +5,7 @@ const assertEqual = function(actual, expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   }
 };
-
-const countLetters = function (letters) {
+const countLetters = function(letters) {
   const countObj = {};
   
   letters = letters.replace('','');
@@ -21,15 +20,15 @@ const countLetters = function (letters) {
   return countObj;
 };
 
-// const result1 = countLetters('prathap');
-// console.log(result1);
-// assertEqual(result1["p"], 2);
-// assertEqual(result1["r"], 1);
-// assertEqual(result1["a"], 2);
-// assertEqual(result1["t"], 2);
-// assertEqual(result1["h"], 1);
+const result1 = countLetters('prathap');
+console.log(result1);
+assertEqual(result1["p"], 2);
+assertEqual(result1["r"], 1);
+assertEqual(result1["a"], 2);
+assertEqual(result1["t"], 2);
+assertEqual(result1["h"], 1);
 
 console.log(countLetters('prathap'));
 
-const result2 = countLetters("lighthouse in the house ");
-console.log(result2)
+const result2 = countLetters("lighthouse labs bootcamp practice ");
+console.log(result2);
