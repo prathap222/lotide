@@ -8,9 +8,10 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(letters) {
   const countObj = {};
   
-  letters = letters.replace('','');
-  
   for (let letter of letters) {
+    if (letter === " ") {
+      break;
+    }
     if (!countObj[letter]) {
       countObj[letter] = 1;
     } else {
@@ -20,7 +21,7 @@ const countLetters = function(letters) {
   return countObj;
 };
 
-const result1 = countLetters('prathap');
+const result1 = countLetters("prathap ");
 console.log(result1);
 assertEqual(result1["p"], 2);
 assertEqual(result1["r"], 1);
@@ -28,7 +29,7 @@ assertEqual(result1["a"], 2);
 assertEqual(result1["t"], 2);
 assertEqual(result1["h"], 1);
 
-console.log(countLetters('prathap'));
+console.log(countLetters("prathap"));
 
-const result2 = countLetters("lighthouse labs bootcamp practice ");
-console.log(result2);
+const result3 =  countLetters("lighthouse in the house");
+console.log(result3);
