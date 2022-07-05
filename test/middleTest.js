@@ -5,25 +5,25 @@ describe("#middle", () => {
   it("returns empty-array if input if empty", () => {
     let input = [];
     let expected = [];
-    assert.equal(middle(input), expected);
+    assert.strictEqual(middle(input), expected);
   });
 
   it("returns empty-array if input-array has 2 elements", () => {
     let input = [1, 2];
     let expected = [];
-    assert.equal(middle(input), expected);
+    assert.strictEqual(middle(input), expected);
   });
 
   it("returns middle index for arrays with odd number of elements", () => {
     let input = [1,2,3];
     let expected = [2];
-    assert.equal(middle(input), expected);
+    assert.strictEqual(middle(input), expected);
   });
 
   it("returns 2 middle index for arrays with even number of elements", () => {
     let input = [1, 2, 3, 4];
     let expected = [2, 3];
-    assert.equal(middle(input), expected);
+    assert.strictEqual(middle(input), expected);
   });
 
 });
