@@ -8,12 +8,16 @@ describe("#assertEqual", () => {
     assert.isTrue(assertEqual(actual,expected))
   });
 
-  it("returns 'true' for 'bootcamp' === 'bootcamp'", () => {
-    assert.equal(assertEqual('bootcamp' ,'bootcamp'), true);
+  it("returns 'true' for 'lighthouse'==='lighthouse' ", () => {
+    let actual = 'lighthouse';
+    let expected = 'lighthouse'
+    assert.isTrue(assertEqual(actual,expected))
   });
   
-  it("returns 'false' for '7' === 7", () => {
-    assert.equal(assertEqual('7' ,7), false);
+  it("returns 'false' for 89 === 9", () => {
+    let actual = 89;
+    let expected = 9
+    assert.isFalse(assertEqual(actual,expected));
   });
   
 
